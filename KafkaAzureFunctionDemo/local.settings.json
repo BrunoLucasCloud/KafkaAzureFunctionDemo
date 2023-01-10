@@ -1,0 +1,11 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "[ENTER BLOB CONNECTION STRING HERE]",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ConnectionString": "[ENTER YOUR SECRET HERE]",
+    "key": "[ENTER YOUR KEY HERE]",
+    "Topic": "[ENTER TOPIC NAME HERE]",
+    "Cluster": "[ENTER BOOTSTRAP SERVER ENDPOINT HERE]"
+  }
+}
