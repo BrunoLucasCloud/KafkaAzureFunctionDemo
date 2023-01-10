@@ -17,8 +17,7 @@ namespace KafkaAzureFunctionDemo
                           ConsumerGroup = "$Default")] KafkaEventData<string>[] events,
             ILogger log)
         {
-            log.LogInformation("hi");
-
+            
             foreach (KafkaEventData<string> eventData in events)
             {
                 log.LogInformation($"C# Kafka trigger function processed a message: {eventData.Value}");
