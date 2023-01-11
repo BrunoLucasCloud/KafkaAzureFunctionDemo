@@ -3,9 +3,13 @@
   "Values": {
     "AzureWebJobsStorage": "[ENTER BLOB CONNECTION STRING HERE]",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
-    "ConnectionString": "[ENTER YOUR SECRET HERE]",
-    "key": "[ENTER YOUR KEY HERE]",
-    "Topic": "[ENTER TOPIC NAME HERE]",
-    "Cluster": "[ENTER BOOTSTRAP SERVER ENDPOINT HERE]"
+    "consumer_connectionString": "[ENTER YOUR SECRET HERE]",
+    "consumer_key": "[ENTER YOUR KEY HERE]",
+    "consumer_topic": "[ENTER TOPIC NAME HERE]",
+    "consumer_cluster": "[ENTER BOOTSTRAP SERVER ENDPOINT HERE]",
+    "producer_connectionString": "[ENTER YOUR SECRET HERE]",
+    "producer_key": "[ENTER YOUR KEY HERE]",
+    "producer_topic": "[ENTER TOPIC NAME HERE]",
+    "producer_cluster": "[ENTER BOOTSTRAP SERVER ENDPOINT HERE]"
   }
 }

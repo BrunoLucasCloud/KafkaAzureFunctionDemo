@@ -13,10 +13,10 @@ namespace KafkaAzureFunctionDemo
         [FunctionName("SendMessage")]
         public IActionResult Output(
             [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequest req,
-            [Kafka("Cluster",
-                   "Topic",
-                   Username = "key",
-                   Password = "ConnectionString",
+            [Kafka("producer_cluster",
+                   "producer_topic",
+                   Username = "producer_key",
+                   Password = "producer_connectionString",
                    Protocol = BrokerProtocol.SaslSsl,
                    AuthenticationMode = BrokerAuthenticationMode.Plain
             )] out string eventData,

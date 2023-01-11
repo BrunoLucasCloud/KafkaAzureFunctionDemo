@@ -8,16 +8,15 @@ namespace KafkaAzureFunctionDemo
     {        
         [FunctionName("ReceiveMessage")]
         public void Run(
-            [KafkaTrigger("Cluster",
-                          "Topic",
-                          Username = "key",
-                          Password = "ConnectionString",
+            [KafkaTrigger("consumer_cluster",
+                          "consumer_topic",
+                          Username = "consumer_key",
+                          Password = "consumer_connectionString",
                           Protocol = BrokerProtocol.SaslSsl,
                           AuthenticationMode = BrokerAuthenticationMode.Plain,
                           ConsumerGroup = "$Default")] KafkaEventData<string>[] events,
             ILogger log)
-        {
-            log.LogInformation("hi");
+        {            
 
             foreach (KafkaEventData<string> eventData in events)
             {
